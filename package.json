@@ -3,13 +3,17 @@
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
+  "productName": "Notion at the Bar",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "electron ."
   },
-  "author": "",
+  "author": "Sahil Parikh",
   "license": "ISC",
   "dependencies": {
-    "electron": "^10.1.5",
     "menubar": "^9.0.1"
+  },
+  "devDependencies": {
+    "electron": "^10.1.5",
+    "electron-packager": "^15.1.0"
   }
 }
