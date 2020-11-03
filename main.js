@@ -1,9 +1,11 @@
 const { menubar } = require('menubar');
 const { app, Menu, Tray } = require('electron');
+const path = require('path');
 
 app.on('ready', () => {
   'use-strict';
-  let tray = new Tray("icon-white.png");
+  const iconPath = path.join(__dirname, "assets", "icon-white.png");
+  let tray = new Tray(iconPath);
   const contextMenu = Menu.buildFromTemplate([{role: "quit"}]);
 
   const mb = menubar({
